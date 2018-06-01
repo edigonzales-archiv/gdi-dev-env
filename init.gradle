@@ -19,10 +19,10 @@ allprojects {
             classpath 'com.bmuschko:gradle-docker-plugin:3.2.5'
         }
         ext {
-            dbUriSogis = "jdbc:postgresql://geodb-t.verw.roots.org/sogis"
+            dbUriSogis = "jdbc:postgresql://geodb-t.verw.rootso.org/sogis"
             dbUserSogis = "bjsvwzie"
             dbPwdSogis = "FUBAR"
-            dbUriPub = "jdbc:postgresql://geodb_brw.verw.roots.org/pub"
+            dbUriPub = "jdbc:postgresql://geodb_brw.verw.rootso.org/pub"
             dbUserPub = "ddluser"
             dbPwdPub = "ddluser"
         }
