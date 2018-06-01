@@ -19,5 +19,5 @@ sudo -u postgres psql -d postgres -f create_roles.sql
 Pub-DB-Dump einspielen (als postgres):
 ```
 createdb pub
-pg_restore --role=postgres --exit-on-error -d postgres pub.dmp
+pg_restore --role=postgres --exit-on-error -d pub pub.dmp
 ```
