@@ -1,0 +1,30 @@
+allprojects {
+    buildscript {
+        repositories {
+            mavenLocal()
+            maven {
+                url "http://jars.interlis.ch"
+            }
+            maven {
+                url "http://download.osgeo.org/webdav/geotools/"
+            }
+            maven {
+                url 'https://plugins.gradle.org/m2/'
+            }            
+            mavenCentral()
+        }
+        dependencies {
+            //classpath group: 'ch.so.agi', name: 'gretl',  version: '1.0.4-SNAPSHOT'
+            classpath group: 'ch.so.agi', name: 'gretl',  version: '1.0.5-SNAPSHOT'
+            classpath 'com.bmuschko:gradle-docker-plugin:3.2.5'
+        }
+        ext {
+            dbUriSogis = "jdbc:postgresql://geodb-t.verw.roots.org/sogis"
+            dbUserSogis = "bjsvwzie"
+            dbPwdSogis = "FUBAR"
+            dbUriPub = "jdbc:postgresql://geodb_brw.verw.roots.org/pub"
+            dbUserPub = "ddluser"
+            dbPwdPub = "ddluser"
+        }
+    }
+}

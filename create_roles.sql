@@ -47,3 +47,6 @@ CREATE ROLE afu_uplus_pub_read LOGIN PASSWORD 'fubar';
 CREATE ROLE afu_schadendienst_pub_read LOGIN PASSWORD 'fubar';
 CREATE ROLE afu_ekat2005_pub_read LOGIN PASSWORD 'fubar';
 CREATE ROLE amb_sirenenplanung_pub_read LOGIN PASSWORD 'fubar';
+
+GRANT admin TO barpasan;
+GRANT admin TO ddluser;

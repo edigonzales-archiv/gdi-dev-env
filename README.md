@@ -1,5 +1,8 @@
 # gdi-dev-env
 
+## init.gradle
+init-Datei für GRETL, um DB-Verbindungen und Abhängigkeiten den lokalen Gegebenheiten anzupassen.
+
 ## soconfig-DB
 ```
 sudo -u postgres psql -d postgres -c 'ALTER USER ddluser WITH SUPERUSER;'
@@ -20,4 +23,5 @@ Pub-DB-Dump einspielen (als postgres):
 ```
 createdb pub
 pg_restore --role=postgres --exit-on-error -d pub pub.dmp
+sudo -u postgres psql -d postgres -c "ALTER DATABASE pub OWNER TO admin;"
 ```
